@@ -7,7 +7,7 @@ $(function(){
         var avatar = $('#avatar').val();
         if (link==null || link=="",content==null || content=="")
         {
-            alert("Please Fill Out All The Fields");
+            alert("You need to fill out the fields marked with a *");
             return false;
         }
         $.post(link, {"content": content, "username": username, "avatar_url": avatar,});
